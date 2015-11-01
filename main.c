@@ -3,8 +3,8 @@
 /* if we have DHT sensor */
 #define myDHTPIN GPIO_PIN_ID_P1_4
 
-#include "../libs.h"
-#include "../nRFLE.c"
+#include "libs.h"
+#include "nRFLE.c"
 
 
 
@@ -131,7 +131,7 @@ void rf_write(unsigned char  data[32]) {
 
  int mode = 0;
  
- void  uart_init() { // set 38400 -not worked yet
+ void  uart_init() { // set 38400 
 //Set up UART pins
 	 
   gpio_pin_configure(GPIO_32P_PIN_ID_FUNC_RXD,
@@ -148,7 +148,7 @@ void rf_write(unsigned char  data[32]) {
                            UART_CONFIG_OPTION_MODE_1_UART_8_BIT |
                            UART_CONFIG_OPTION_CLOCK_FOR_MODES_1_3_USE_BR_GEN |
                            UART_CONFIG_OPTION_BIT_SMOD_SET,
-                 1011 //0x03F3
+                 1011 //0x03F3 - see datasheet on NRF24LE for possible values
 	                    ); 
 }
 
@@ -213,7 +213,7 @@ rf_init(100); //open 100 chan (addreses already defined in nRLE.c)
 
 led_on();  delay_ms(500);  led_off(); // welcome Blink on P0.0 
 dhtread(myDHTPIN,&temp,&hum);
-printf("nrf24le1 output ready press a key to report temperature  (now: %d,%d)\r\n",temp,hum);
+printf("nrf24le1:: output ready press a key to report temperature  (now: %d,%d)\r\n",temp,hum);
 
 while(1)
 	{
