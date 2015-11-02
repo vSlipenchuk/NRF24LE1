@@ -213,7 +213,7 @@ rf_init(100); //open 100 chan (addreses already defined in nRLE.c)
 
 led_on();  delay_ms(500);  led_off(); // welcome Blink on P0.0 
 dhtread(myDHTPIN,&temp,&hum);
-printf("nrf24le1:: output ready press a key to report temperature  (now: %d,%d)\r\n",temp,hum);
+printf("nrf24le1 :) output ready press a key to report temperature  (now: %d,%d)\r\n",temp,hum);
 
 while(1)
 	{
@@ -247,7 +247,7 @@ unsigned char  d[32];
 
 if (rf_read(d)) { // send resp back  if we have recv OK
 	dhtread(myDHTPIN,&temp,&hum);
-	d[5]=temp; d[6]=hum; // pack it
+	d[5]=temp/10; d[6]=hum/10; // pack it
 	rf_write(d); //just echo back
 	 //mode = !mode;	 if (mode) led_on(); else led_off(); // blinking
 	led_on(); delay_ms(100); led_off(); // and blinking

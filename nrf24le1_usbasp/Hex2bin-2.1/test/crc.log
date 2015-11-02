@@ -1,0 +1,569 @@
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 07  0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to F4
+CRC-8/ATM: expected F4
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 07  0 f f 55 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to A1
+testcrc.bin ref/testcrc-8-atm.ref differ: char 11, line 1
+CRC-8/ITU: expected A1
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 07 FF t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to D0
+testcrc.bin ref/testcrc-8-itu.ref differ: char 11, line 1
+CRC-8/ROHC: expected D0
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 39  0 t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 15
+CRC-8/DARC: expected 15
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 1D FD f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 7E
+CRC-8/ICODE: expected 7E
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 1D FF f f FF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 4B
+CRC-8/J1850: expected 4B
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 31  0 t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to A1
+CRC-8/MAXIM: expected A1
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 9B  0 t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 25
+CRC-8/WCDMA: expected 25
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C 8D  0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to D2
+CRC-8/CCITT: expected D2
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 2 -C D5  0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to BC
+CRC-8: expected BC
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 0 t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to BB3D
+CRC-16: expected BB3D
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to FEE8
+CRC-16/BUYPASS: expected FEE8
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 800D f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 9ECF
+CRC-16/DDS-110: expected 9ECF
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 0 t t FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 44C2
+testcrc.bin ref/testcrc-16-dds-110.ref differ: char 11, line 1
+CRC-16/MAXIM: expected 44C2
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 FFFF t t FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to B4C8
+CRC-16/USB: expected B4C8
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8005 FFFF t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 4B37
+CRC-16/MODBUS: expected 4B37
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 1D0F f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to E5CC
+testcrc.bin ref/testcrc-16-modbus.ref differ: char 11, line 1
+CRC-16/: expected E5CC
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 FFFF f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 29B1
+CRC-16/CCITT-FFFF: expected 29B1
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 FFFF f f FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to D64E
+CRC-16/GENIBUS: expected D64E
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 31C3
+CRC-16/XMODEM: expected 31C3
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 FFFF t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 6F91
+CRC-16/MCRF4XX: expected 6F91
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 B2AA t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 63D0
+CRC-16/RIELLO: expected 63D0
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 0 t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 2189
+CRC-16/CCITT-KERMIT: expected 2189
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 1021 FFFF t t FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 906E
+CRC-16/X25: expected 906E
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 0589 0 f f 1 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 007E
+CRC-16/DECT-R: expected 007E
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 0589 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 007F
+CRC-16/DECT-X: expected 007F
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 3D65 0 t t FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to EA82
+testcrc.bin ref/testcrc-16-dect-x.ref differ: char 11, line 1
+CRC-16/DNP: expected EA82
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 3D65 0 f f FFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to C2B7
+CRC-16/EN-13757: expected C2B7
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C 8BB7 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to D0DB
+CRC-16/T10-DIF: expected D0DB
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 3 -C A097 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 0FB3
+testcrc.bin ref/testcrc-16-t10-dif.ref differ: char 11, line 1
+CRC-16/TELEDISK: expected 0FB3
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 04C11DB7 FFFFFFFF t t FFFFFFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to CBF43926
+CRC-32: expected CBF43926
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 04C11DB7 FFFFFFFF f f FFFFFFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to FC891918
+testcrc.bin ref/testcrc-32.ref differ: char 11, line 1
+CRC-32/BZIP2: expected FC891918
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 04C11DB7 FFFFFFFF f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 0376E6E7
+testcrc.bin ref/testcrc-32-bzip2.ref differ: char 11, line 1
+CRC-32/MPEG2: expected 0376E6E7
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 04C11DB7 00000000 f f FFFFFFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 765E7680
+CRC-32/POSIX: expected 765E7680
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 04C11DB7 FFFFFFFF t t 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 340BC6D9
+CRC-32/JAMCRC: expected 340BC6D9
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 1EDC6F41 FFFFFFFF t t FFFFFFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to E3069283
+testcrc.bin ref/testcrc-32-jamcrc.ref differ: char 11, line 1
+CRC-32/C: expected E3069283
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C A833982B FFFFFFFF t t FFFFFFFF testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 87315576
+CRC-32/D: expected 87315576
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 741B8CD7 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 085A3197
+CRC-32/K: expected 085A3197
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 814141AB 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to 3010BF7F
+CRC-32/Q: expected 3010BF7F
+Pass
+hex2bin -c -f 10A -r 100 108 -l 20 -E 0 -k 4 -C 000000AF 0 f f 0 testcrc.hex
+hex2bin v2.1, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Lowest address:   256
+Highest address:  287
+Starting address: 256
+Max Length:       32
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 0000011F
+Pad Byte          = FF
+Addr 0000010A set to BD0BE338
+CRC-32/XFER: expected BD0BE338
+Pass

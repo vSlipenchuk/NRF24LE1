@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1424646503 source:c:\users\public\documents\hex2bin-2.0\libcrc.c
+	<stdint.h>
+
+1424584750 source:c:\users\public\documents\hex2bin-2.0\binary.c
+	<stdint.h>
+	"binary.h"
+
+1424640669 c:\users\public\documents\hex2bin-2.0\binary.h
+
+1438796662 source:c:\users\public\documents\hex2bin-2.0\common.c
+	"common.h"
+
+1438795997 c:\users\public\documents\hex2bin-2.0\common.h
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"binary.h"
+	"libcrc.h"
+
+1424582195 c:\users\public\documents\hex2bin-2.0\libcrc.h
+
+1438762559 source:c:\users\public\documents\hex2bin-2.0\hex2bin.c
+	"common.h"
+

@@ -1,0 +1,4 @@
+export P=/mnt/c/arduino/arduino-1.0.5/hardware/tools
+export PATH=$P:$PATH
+avrdude -C $P/avrdude.conf $*
+
